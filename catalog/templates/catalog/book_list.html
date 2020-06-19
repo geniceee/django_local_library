@@ -2,6 +2,8 @@
 
 {% block content %}
   <h1>Book List</h1>
+  <p><em>Explore the books that Local Library has!</em></p>
+  <hr>
   {% if book_list %}
   <ul>
     {% for book in book_list %}
@@ -12,5 +14,6 @@
   </ul>
   {% else %}
     <p>There are no books in the library.</p>
-  {% endif %}       
+  {% endif %}   
+</hr>    
 {% endblock %}

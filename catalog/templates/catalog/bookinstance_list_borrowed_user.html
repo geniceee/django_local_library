@@ -2,6 +2,8 @@
 
 {% block content %}
     <h1>Borrowed books</h1>
+    <p><em>Do remember to return your books on time!<br>Please note that there will be a late charge incurred per day for every book returned late.</em></p>
+    <hr>
 
     {% if bookinstance_list %}
     <ul>
@@ -16,4 +18,5 @@
     {% else %}
       <p>There are no books borrowed.</p>
     {% endif %}       
+  </hr>
 {% endblock %}

@@ -2,6 +2,8 @@
 
 {% block content %}
   <h1>Author List</h1>
+  <p><em>Local Library has the privilege of owning works of these wonderful authors! <br>Check them out!</em></p>
+  <hr>
   {% if author_list %}
   <ul>
     {% for author in author_list %}
@@ -12,6 +14,7 @@
     {% endfor %}
   </ul>
   {% else %}
-    <p>There are authors available.</p>
+    <p>There are no authors available.</p>
   {% endif %}       
+</hr>
 {% endblock %}
